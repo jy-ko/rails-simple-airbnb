@@ -1,0 +1,49 @@
+<div class="header">
+<h3><%= link_to 'Simple Airbnb', flats_path %></h3>
+<div class="header-btns">
+  <%= link_to "Edit", edit_flat_path(@flat), :class => "btn btn-warning" %>
+  <%= link_to "Delete", flat_path(@flat), :class => "btn btn-success", method: :delete %>
+</div>
+</div>
+<div class="banner">
+  <%= image_tag @flat["picture_url"], alt: "alttext", width: "100%" %>
+</div>
+
+<div class="container">
+  <div class="row">
+  <div class="left col">
+    <div class="card-top">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.address %></p>
+    </div>
+
+    <div class="card-details">
+      <h2>A bit more about this flat...</h2>
+      <p><%= @flat.description %></p>
+    </div>
+
+    <div class="card-details-footer">
+      <i class="fas fa-user-friends"></i><%= @flat.number_of_guests%>
+      <i class="fas fa-euro-sign"></i><%= @flat.price_per_night%>
+    </div>
+
+  </div>
+
+  <div class="right col">
+    <div class="card-book">
+      <p><strong>Book this place!</strong></p>
+    </div>
+
+    <div class="card-share">
+        <p>Share</p>
+        <div class="icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-pinterest-square"></i>
+          <i class="fas fa-envelope-square"></i>
+        </div>
+    </div>
+  </div>
+  </div>
+
+</div>

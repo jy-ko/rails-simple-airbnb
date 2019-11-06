@@ -1,0 +1,37 @@
+.banner {
+  height: 400px;
+}
+
+
+.card-top {
+  background-color: white;
+  padding: 8px;
+  margin: 4px;
+  box-shadow: 2 2 0 0 rgba(0,0,0,0.3)
+}
+
+.card-details {
+  background-color: white;
+  padding: 8px;
+  margin: 4px;
+}
+
+.card-details-footer {
+  background-color: white;
+  padding: 8px;
+  margin: 4px;
+}
+
+.card-book {
+  background-color: white;
+  padding: 8px;
+  margin: 4px;
+}
+
+.card-share {
+  background-color: white;
+  padding: 8px;
+  margin: 4px;
+  display: flex;
+  justify-content: space-between;
+}

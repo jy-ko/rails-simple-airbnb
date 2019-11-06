@@ -1,0 +1,16 @@
+<div class="header">
+<h3><%= link_to 'Simple Airbnb', flats_path %></h3>
+</div>
+
+<div class="container">
+  <h2 class="pt-2">List a new Flat</h2>
+  <%= simple_form_for @flat do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :picture_url %>
+    <%= f.submit "add a flat", class: "btn btn-primary" %>
+  <% end %>
+</div>
